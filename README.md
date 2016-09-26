@@ -28,4 +28,4 @@ $('#ieAlert').ajaxInclude('inc_ieAlert.html');
 ```
 ###3、凡是需要操作子页面DOM的js，直接写到子页面DOM下面，或写到单独js中并在子页面DOM下面引入。
 【千万不要写到母页面中或在母页面中引入，jQuery.ready方法会在子页面DOM加载之前执行，找不到对应dom当然会出问题】<br/>
-【后端开发时就不需要顾虑了，随意】
+【后端开发时，会把对应的js引用直接改成php，.net支持的include()等，就不需要顾虑了，随意】
