@@ -1,5 +1,5 @@
 # ajaxInclude方法
-    模拟php的include功能，通过ajax load()实现。
+    模拟php的include功能，通过jquery ajax load()实现。
     Created by 幻想家 on 2015/7/2.
     Current Version:v20160614
     云端备份唯一地址：github.com/myfancy
