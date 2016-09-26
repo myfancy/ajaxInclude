@@ -68,13 +68,13 @@ $('#ieAlert').ajaxInclude('inc_ieAlert.html');
 如非必要，你每次这么写也行：(省的都得引入个多余js，后端开发还要删掉，做好注释就好)
 
 ```html
-<!--引入公用页面------------------------------start-->
+<!--引入公用页面——————————————————————————————————————start-->
 <div id="new-nav"></div>
 <script type="text/javascript">
     $( "#new-nav" ).load("/ #jq-footerNavigation li"，function(responseTxt,statusTxt,xhr){
         //your code you need...
     });
 </script>
-<!--引入公用页面------------------------------end-->
+<!--引入公用页面——————————————————————————————————————end-->
 ```
 这样会导致你的引入代码被那个div包裹，在css的理论上，不会有任何影响。实际情况可能会复杂一些。我上面说的遇到bug，也是指这些，样式莫名异常，找不到原因的时候就会怀疑是不是这里的问题。所以一次解决掉它了。看ajaxInclude-1.0.js了解更多。
